@@ -15,22 +15,25 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/bf_estiloSistema.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 <body>
-  <!-- Inicio do Cabeçalho -->
-  <header>
-    <div>
-      <a href="">
-        <img src="../img/bf_logotipoSistema.png">
-      </a>
-    </div>
-  </header>
-  <br><br>
-  <!-- Fim do Cabeçalho -->
+<!-- Inicio do Cabeçalho -->
+<header>
+  <div id="divLogoSistema">
+    <span id="auxAlinhamentoVertical"></span>
+    <img src="../img/bf_logotipoSistema.png" id="imgLogoSistema">
+  </div>
+  <div id="usuarioLogado">
+    Olá Nome do Usuário !
+    <br>
+    <img src="../img/bf_iconeCarrinho.png" id="imgCarrinho">
+  </div>
+</header>
+<br><br>
+<!-- Fim do Cabeçalho -->
 
   <div>
     <h1>Cadastro de Cliente</h1>
@@ -41,20 +44,20 @@
     <form method="post" action="">
       <fieldset>
         <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome..."><br><br>
+        <input type="text" id="nome" name="nome" placeholder="Nome..."><br><br>
         <div>
           Aqui vai um exemplo de mensagem de erro
         </div>
         <label for="cpf">CPF:</label><br>
-        <input type="text" id="cpf" name="cpf" placeholder="Digite o seu CPF..."><br><br>
+        <input type="text" id="cpf" name="cpf" placeholder="CPF..."><br><br>
         <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email" placeholder="Digite o seu email..."><br><br>
+        <input type="text" id="email" name="email" placeholder="Email..."><br><br>
         <label for="telefone">Telefone:</label><br>
-        <input type="text" id="telefone" name="cpf" placeholder="Digite o seu telefone..."><br><br>
+        <input type="text" id="telefone" name="cpf" placeholder="Telefone..."><br><br>
         <label for="cep">CEP:</label><br>
-        <input type="text" id="cep" name="cep" placeholder="Digite o seu CEP..."><br><br>
+        <input type="text" id="cep" name="cep" placeholder="CEP..."><br><br>
         <label for="senha">Senha:</label><br>
-        <input type="password" id="senha" name="senha" placeholder="Digite a sua Senha..."><br><br>
+        <input type="password" id="senha" name="senha" placeholder="Senha..."><br><br>
 
         <input type="button" value="Cadastrar">
 

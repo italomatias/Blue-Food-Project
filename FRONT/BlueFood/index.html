@@ -15,16 +15,16 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/bf_estiloSistema.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 <body>
   <!-- Inicio do Cabeçalho -->
   <header>
-    <div>
-      <img src="img/bf_logotipoSistema.png">
+    <div id="divLogoSistema">
+      <span id="auxAlinhamentoVertical"></span>
+      <img src="img/bf_logotipoSistema.png" id="imgLogoSistema">
     </div>
   </header>
   <br><br>
@@ -32,7 +32,7 @@
 
   <div>
     <a href="">
-      <img src="img/bf_iconeUsuario.png">
+      <img src="img/bf_iconeUsuario.png" id="imgIconeUsuario">
     </a>
     <h1>Autenticação</h1>
     <form method="post" action="" >
@@ -43,7 +43,7 @@
       </fieldset>
     </form>
     <br>
-    <div>
+    <div id="msgErro">
       Aqui vai um exemplo de mensagem de erro
     </div>
     <br>
