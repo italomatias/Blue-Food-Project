@@ -36,23 +36,71 @@
 <!-- Fim do Cabeçalho -->
 
 <div>
+  <h1>É hora de comer</h1>
+  <form method="post" action="">
+    <fieldset id="fieldsetFiltros">
+      <input type="text" name="busca" placeholder="Buscar por...">
+      <input type="button" value="Pesquisar">
+    </fieldset>
+  </form>
+</div>
+<br><br>
+<div id="comidaGeral">
+  <div id="categoriaComidaOp">
+    <a href="#">
+      <img src="../img/sys_categoriaChurrasco.png" id="imgCategoriaComida"><br>
+      <span>Churrasco</span>
+    </a>
+  </div>
+
+  <div id="categoriaComidaOp">
+    <a href="#">
+      <img src="../img/sys_categoriaHamburguer.png" id="imgCategoriaComida"><br>
+      <span>Hamburguer</span>
+    </a>
+  </div>
+
+  <div id="categoriaComidaOp">
+    <a href="#">
+      <img src="../img/sys_categoriaPizza.png" id="imgCategoriaComida"><br>
+      <span>Pizza</span>
+    </a>
+  </div>
+
+  <div id="categoriaComidaOp">
+    <a href="#">
+      <img src="../img/sys_categoriaSalada.png" id="imgCategoriaComida"><br>
+      <span>Salada</span>
+    </a>
+  </div>
+
+  <div id="categoriaComidaOp">
+    <a href="#">
+      <img src="../img/sys_categoriaSobremesa.png" id="imgCategoriaComida"><br>
+      <span>Sobremesa</span>
+    </a>
+  </div>
+</div>
+
+<div>
   <h1>Resultados</h1>
   <fieldset>
     <legend>Filtros</legend>
     <input type="button" value="Entrega Grátis"><br>
     <input type="button" value="Maior Preço"><input type="button" value="Menor Preço"><br>
     <input type="button" value="Maior Taxa"><input type="button" value="Menor Taxa"><br>
-    <input type="button" value="Maior Tempo"><input type="button" value="Menor Tempo"><br>
+    <input type="button" value="Maior Tempo"><input type="button" value="Menor Tempo" id="inputSelecionado"><br>
   </fieldset>
 </div>
 
+<br>
 <div>
 
-  <div>
+  <div id="divResOP">
     <a href="#">
-      <img src="../img/sys_restauranteBubgerKirg.png">
+      <img src="../img/sys_restauranteBubgerKirg.png" id="imgResOp">
       <br>
-      <span>Nome do Restaurante</span>
+      <span id="resTitle">Nome do Restaurante</span>
       <br>
       <span>Categoria De Comida</span>
       <br>
@@ -65,11 +113,11 @@
 
   <br><br>
 
-  <div>
+  <div id="divResOP">
     <a href="#">
-      <img src="../img/sys_restauranteMcNaldos.png">
+      <img src="../img/sys_restauranteMcNaldos.png" id="imgResOp">
       <br>
-      <span>Nome do Restaurante</span>
+      <span id="resTitle">Nome do Restaurante</span>
       <br>
       <span>Categoria De Comida</span>
       <br>
@@ -80,11 +128,11 @@
     </a>
   </div>
 
-  <div>
+  <div id="divResOP">
     <a href="#">
-      <img src="../img/sys_restauranteSbubby.png">
+      <img src="../img/sys_restauranteSbubby.png" id="imgResOp">
       <br>
-      <span>Nome do Restaurante</span>
+      <span id="resTitle">Nome do Restaurante</span>
       <br>
       <span>Categoria De Comida</span>
       <br>
@@ -94,8 +142,10 @@
       <br>
     </a>
   </div>
+
 </div>
 
+<br><br>
 
  <input type="button" value="Voltar">
 

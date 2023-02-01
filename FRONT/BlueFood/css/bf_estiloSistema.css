@@ -71,6 +71,7 @@ div#msgErro
   margin-right: auto;
   border-radius: 10px;
   color: #ffffff;
+  padding: 10px;
 }
 
 div#usuarioLogado
@@ -133,4 +134,102 @@ input[type=submit]:hover
 {
   background-color: #69c5ee;
   border-color: #1e9bde;
+}
+
+table
+{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  front-size: 14px;
+  border-spacing: 1px;
+}
+
+tr:nth-child(even)
+{
+  background-color: #dddddd ;
+}
+
+tr:nth-child(odd)
+{
+  background-color: #bbbbbb ;
+}
+
+th
+{
+  background-color: #1e9bde;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 3px;
+}
+
+td
+{
+  padding: 3px ;
+}
+
+div#categoriaComidaOp
+{
+  background-color: #ffffff;
+  height: 130px;
+  float: left;
+}
+
+div#comidaGeral
+{
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+img#imgCategoriaComida
+{
+  height: 50%;
+}
+
+fieldset#fieldsetFiltros
+{
+  border-width: 3px;
+
+}
+
+input#inputSelecionado
+{
+  background-color: #69c5ee;
+  border-color: #1e9bde;
+}
+
+img#imgResOp
+{
+  height: 130px;
+
+}
+
+span#resTitle
+{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+div#divResOP
+{
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#msgSucess
+{
+  background-color: #0baf00;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto ;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.inputError
+{
+  border: 2px solid #ff2828;
 }
