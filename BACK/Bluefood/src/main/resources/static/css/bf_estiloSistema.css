@@ -1,0 +1,235 @@
+*
+{
+  font-family: "Verdana";
+}
+
+body
+{
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+}
+
+a
+{
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+
+div#divLogoSistema
+{
+  background-color: #1e9bde;
+  height: 70px;
+
+}
+
+span#auxAlinhamentoVertical
+{
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+img#imgLogoSistema
+{
+  height: 60%;
+  vertical-align: middle;
+}
+
+img#imgIconeUsuario
+{
+  width: 100px;
+}
+
+h1
+{
+  font-style: italic;
+  color: #1e9bde;
+  background-color: #eeeeee;
+  text-transform: uppercase;
+  font-size: 20px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 10px solid #1e9bde;
+  border-right: 10px solid #1e9bde;
+  border-top: 2px solid #1e9bde;
+  border-bottom: 2px solid #1e9bde;
+  border-radius: 30px;
+
+}
+
+div#msgErro
+{
+  background-color: #d40000;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px;
+}
+
+div#usuarioLogado
+{
+  background-color: #7bc2e5;
+  color: #ffffff;
+  line-height: 40px ;
+}
+
+img#imgCarrinho
+{
+  height: 50px;
+
+}
+
+fieldset
+{
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 2px;
+}
+
+input,textarea,select
+{
+  border: 2px solid #1e9bde;
+  height: 35px;
+  margin-bottom: 6px;
+}
+
+textarea
+{
+  width: 300px;
+  height: 100px;
+}
+
+input[type=text],input[type=password],select
+{
+  font-size: 16px;
+  width: 140px;
+  padding-left: 8px ;
+}
+
+input[type=button],input[type=submit]
+{
+  background-color: #1e9bde ;
+  border-bottom: 3px solid #0153b0 ;
+  border-top: 1px solid #0153b0 ;
+  border-left: 1px solid #0153b0 ;
+  border-right: 1px solid #0153b0 ;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover
+{
+  background-color: #69c5ee;
+  border-color: #1e9bde;
+}
+
+table
+{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  front-size: 14px;
+  border-spacing: 1px;
+}
+
+tr:nth-child(even)
+{
+  background-color: #dddddd ;
+}
+
+tr:nth-child(odd)
+{
+  background-color: #bbbbbb ;
+}
+
+th
+{
+  background-color: #1e9bde;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 3px;
+}
+
+td
+{
+  padding: 3px ;
+}
+
+div#categoriaComidaOp
+{
+  background-color: #ffffff;
+  height: 130px;
+  float: left;
+}
+
+div#comidaGeral
+{
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+img#imgCategoriaComida
+{
+  height: 50%;
+}
+
+fieldset#fieldsetFiltros
+{
+  border-width: 3px;
+
+}
+
+input#inputSelecionado
+{
+  background-color: #69c5ee;
+  border-color: #1e9bde;
+}
+
+img#imgResOp
+{
+  height: 130px;
+
+}
+
+span#resTitle
+{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+div#divResOP
+{
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#msgSucess
+{
+  background-color: #0baf00;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto ;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.inputError
+{
+  border: 2px solid #ff2828;
+}
