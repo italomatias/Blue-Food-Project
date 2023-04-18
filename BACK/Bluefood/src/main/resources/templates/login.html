@@ -2,27 +2,29 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.themeleaf.org" layout:decorate="~{layout}">
 <body>
-  <div layout:fragment="content">
+<div layout:fragment="content">
     <div>
-      <a href="">
-        <img th:src="@{/img/bf_iconeUsuario.png}" id="imgIconeUsuario"/>
-      </a>
-      <h1>Autenticação</h1>
-      <form method="post" action="" >
-        <fieldset>
-          <input type="text" name="email" placeholder="Digite seu e-mail..."/>
-          <input type="password" name="senha" placeholder="Digite sua senha..."/>
-          <input type="button" value="Entrar"/>
-        </fieldset>
-      </form>
-      <br/>
-      <div id="msgErro">
-        Aqui vai um exemplo de mensagem de erro
-      </div>
-      <br/>
-      <input type="button" value="Gostaria de criar a minha conta de usuário"/>
-      <input type="button" value="Gostaria de criar a minha conta de restaurante "/>
+        <a href="">
+            <img th:src="@{/img/bf_iconeUsuario.png}" id="imgIconeUsuario"/>
+        </a>
+        <h1>Autenticação</h1>
+        <form method="post" action="">
+            <fieldset>
+                <input type="text" name="email" placeholder="Digite seu e-mail..."/>
+                <input type="password" name="senha" placeholder="Digite sua senha..."/>
+                <input type="button" value="Entrar"/>
+            </fieldset>
+        </form>
+        <br/>
+        <div id="msgErro">
+            Aqui vai um exemplo de mensagem de erro
+        </div>
+        <br/>
+        <form method="get" th:action="@{/public/cliente/new}">
+            <input type="submit" value="Gostaria de criar a minha conta de cliente"/>
+        </form>
+        <input type="button" value="Gostaria de criar a minha conta de restaurante "/>
     </div>
-  </div>
+</div>
 </body>
 </html>
