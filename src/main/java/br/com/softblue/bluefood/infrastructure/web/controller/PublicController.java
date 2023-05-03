@@ -1,10 +1,9 @@
 package br.com.softblue.bluefood.infrastructure.web.controller;
 
-import br.com.softblue.bluefood.application.ClienteService;
-import br.com.softblue.bluefood.application.RestauranteService;
-import br.com.softblue.bluefood.application.ValidationException;
+import br.com.softblue.bluefood.application.service.ClienteService;
+import br.com.softblue.bluefood.application.service.RestauranteService;
+import br.com.softblue.bluefood.application.service.ValidationException;
 import br.com.softblue.bluefood.domain.cliente.Cliente;
-import br.com.softblue.bluefood.domain.restaurante.CategoriaRestaurante;
 import br.com.softblue.bluefood.domain.restaurante.CategoriaRestauranteRepository;
 import br.com.softblue.bluefood.domain.restaurante.Restaurante;
 import jakarta.validation.Valid;
@@ -16,8 +15,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.List;
 
 @Controller
 @RequestMapping(path = "/public")
@@ -76,6 +73,7 @@ public class PublicController {
         }
 
         ControllerHelper.setEditMode(model,false);
+        ControllerHelper.addCategoriasToRequest(categoriaRestauranteRepository,model);
         return "restauranteCadastro";
     }
 }

@@ -1,4 +1,4 @@
-package br.com.softblue.bluefood.application;
+package br.com.softblue.bluefood.application.service;
 
 import br.com.softblue.bluefood.util.IOUtils;
 import org.springframework.beans.factory.annotation.Value;

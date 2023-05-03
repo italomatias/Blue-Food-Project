@@ -1,4 +1,4 @@
-package br.com.softblue.bluefood.application;
+package br.com.softblue.bluefood.application.service;
 
 public class ValidationException extends Exception{
 
